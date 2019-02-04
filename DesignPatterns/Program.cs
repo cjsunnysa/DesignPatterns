@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Singleton;
+﻿using DesignPatterns.Builder;
+using DesignPatterns.Singleton;
 using System;
 
 namespace DesignPatterns
@@ -7,7 +8,8 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            IExecutable app = new SingletonDemo();
+            //IExecutable app = new SingletonDemo();
+            IExecutable app = new BuilderDemo();
 
             app.Run();
 
