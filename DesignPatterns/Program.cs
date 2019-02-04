@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Singleton;
+using System;
 
 namespace DesignPatterns
 {
@@ -6,7 +7,12 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IExecutable app = new SingletonDemo();
+
+            app.Run();
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
     }
 }
