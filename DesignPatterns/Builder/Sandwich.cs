@@ -7,10 +7,10 @@ namespace DesignPatterns.Builder
 {
     public partial class Sandwich
     {
-        private string _bread;
-        private List<string> _condiments;
-        private string _sauce;
-        private List<string> _meats;
+        private readonly string _bread;
+        private readonly List<string> _condiments;
+        private readonly string _sauce;
+        private readonly List<string> _meats;
 
         public Sandwich(
             string bread,
