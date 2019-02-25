@@ -25,12 +25,15 @@ namespace DesignPatterns.Builder
             _meats = meats;
         }
 
-        public string Bread => _bread == null ? "*** No Bread ***" : _bread;
+        public string Bread => _bread ?? "*** No Bread ***";
+
         public string Condiments => 
             _condiments == null || _condiments.Count == 0
             ? "*** No Condiments ***"
             : _condiments.Aggregate(string.Empty, (total, current) => $"{total}, {current}").Remove(0, 2);
-        public string Sauce => _sauce == null ? "*** No Sauce ***" : _sauce;
+
+        public string Sauce => _sauce ?? "*** No Sauce ***";
+
         public string Meats =>
             _meats == null || _meats.Count == 0
             ? "*** No Meat ***"
