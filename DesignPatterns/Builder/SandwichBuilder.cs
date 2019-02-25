@@ -46,7 +46,7 @@ namespace DesignPatterns.Builder
 
         public SandwichBuilder AddSauce(string sauce)
         {
-            this._sauce = sauce;
+            _sauce = sauce;
 
             return this;
         }
