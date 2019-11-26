@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Builder;
+using DesignPatterns.SimpleFactory;
 using DesignPatterns.Singleton;
 using System;
 
@@ -9,10 +10,12 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             //IExecutable app = new SingletonDemo();
-            IExecutable app = new BuilderDemo();
+            //IExecutable app = new BuilderDemo();
+            IExecutable app = new SimpleFactoryDemo();
 
             app.Run();
 
+            Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
