@@ -2,6 +2,7 @@
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.SimpleFactory;
 using DesignPatterns.Singleton;
+using DesignPatterns.Strategy;
 using System;
 
 namespace DesignPatterns
@@ -13,7 +14,8 @@ namespace DesignPatterns
             //IExecutable app = new SingletonDemo();
             //IExecutable app = new BuilderDemo();
             //IExecutable app = new SimpleFactoryDemo();
-            IExecutable app = new FactoryMethodDemo();
+            //IExecutable app = new FactoryMethodDemo();
+            IExecutable app = new StrategyDemo();
 
             app.Run();
 
