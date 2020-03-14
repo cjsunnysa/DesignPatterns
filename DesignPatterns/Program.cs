@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Builder;
 using DesignPatterns.FactoryMethod;
+using DesignPatterns.Observer;
 using DesignPatterns.SimpleFactory;
 using DesignPatterns.Singleton;
 using DesignPatterns.Strategy;
@@ -15,7 +16,8 @@ namespace DesignPatterns
             //IExecutable app = new BuilderDemo();
             //IExecutable app = new SimpleFactoryDemo();
             //IExecutable app = new FactoryMethodDemo();
-            IExecutable app = new StrategyDemo();
+            //IExecutable app = new StrategyDemo();
+            IExecutable app = new ObserverDemo();
 
             app.Run();
 
